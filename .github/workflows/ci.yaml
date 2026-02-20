@@ -16,4 +16,4 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - run: ./ty check . --output-format github | | tr '\n' '%' | sed 's/%/%0A/g'
+      - run: ./ty check . --output-format github | tr '\n' '%' | sed 's/%/%0A/g'
