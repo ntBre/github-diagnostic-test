@@ -11,5 +11,4 @@ jobs:
     name: "check"
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        ./ty check . --output-format github
+      - run: ./ty check . --output-format github
