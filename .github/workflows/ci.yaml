@@ -8,7 +8,8 @@ on:
 
 jobs:
   check:
-    name: "Lint"
+    name: "check"
     runs-on: ubuntu-latest
     steps:
-      - uses: astral-sh/ruff-action@v3
+      - run: |
+        ./ty check . --output-format github
